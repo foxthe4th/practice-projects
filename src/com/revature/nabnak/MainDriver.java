@@ -90,7 +90,8 @@ public class MainDriver {
 
         public static void register() throws IOException { // Throws + ExceptionName is known as ducking
                 // Ducking means passing the responsibility of handling the exception to the code that's calling it.
-                // Problem... terminalReader is not within this scope? Solution...
+                // Problem... terminalReader is not within this scope... Solution?
+                // We need to define the terminalReader as static outside the main method - see line 22
 
             System.out.println("Please enter your user email: \n>"); // \n is a new line character, aka return or enter
             String email = terminalReader.readLine();

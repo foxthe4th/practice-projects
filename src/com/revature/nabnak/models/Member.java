@@ -9,7 +9,7 @@ public class Member {  //classes are simply blueprints for that object
         // 2. Constructors (default is a no-arg constructor)
         // 3. Methods
 
-        //Attributes
+        //Attributesgit
         public String email;
         public String fullName;
         public int experienceMonths;
