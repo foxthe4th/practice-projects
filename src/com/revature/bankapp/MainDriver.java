@@ -67,7 +67,7 @@ public class MainDriver {
                         System.out.println("Invalid selection!");
                 }
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
     }
@@ -78,7 +78,7 @@ public class MainDriver {
 
            // These are our registration prompts for personal information.
            // NOTE: I'm going to try and add a security question for password recovery
-            System.out.println("Please enter the following personal info for your account. \n> \n> \n> Please enter your first name \n>");
+            System.out.println("Please begin with personal information for your account. \n> \n> \n> Please enter your first name \n>");
 
             String firstName = terminalInput.readLine();
 
@@ -129,32 +129,8 @@ public class MainDriver {
 
                 fileWriter.write(member.writetoFile());
 
-
-
             } catch (IOException e){
-                e.printStackTrace();
-            }
-
-
-
-
-
-
-
-
-
-
+                e.printStackTrace();}
    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
