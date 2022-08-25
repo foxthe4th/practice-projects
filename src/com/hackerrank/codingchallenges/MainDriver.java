@@ -1,4 +1,4 @@
-package com.revature.nabnak;
+package com.hackerrank.codingchallenges;
 
 public class MainDriver {
     public static void main(String[] args) {
